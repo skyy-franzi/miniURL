@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="columns is-centered hero">
+        <div class="column is-half hero-body">
+
+            <h1 class="title">{{ title }}</h1>
+        </div>
+
+        <form class="box">
+            <div class="field">
+                <label class="label">Here you can enter your URL:</label>
+                <div class="control">
+                <input class="input" type="text" placeholder="Long URL">
+                </div>
+            </div>
+
+            <button class="button is-primary">Make your minimalized URL!</button>
+        </form>
+
+        <form class="box">
+            <div class="field">
+                <label class="label">Here is your minimalized URL:</label>
+                <div class="control">
+                <input class="input" type="text" placeholder="Short URL">
+                </div>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>
