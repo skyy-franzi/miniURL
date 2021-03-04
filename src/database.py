@@ -18,3 +18,20 @@ class Database():
         cursor.execute("INSERT INTO urls VALUES (?, ?)", (long_url, short_url_id))
         connection.commit()
         connection.close()
+    
+    def url_id_exists(self, url_id):
+        connection = sqlite3.connect(self.file_name)
+        cursor = connection.cursor()
+        cursor.execute("SELECT * FROM urls WHERE short_url_id=?", [url_id])
+        data = cursor.fetchall()
+        if len(data) == 0:
+            return False
+        else:
+            return True
+
+    def get_long_url(self, url_id):
+        connection = sqlite3.connect(self.file_name)
+        cursor = connection.cursor()
+        cursor.execute("SELECT long_url FROM 'urls' WHERE short_url_id=?", [url_id])
+        data = cursor.fetchone()
+        return data

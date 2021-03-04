@@ -1,14 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}
-{{ title }}
-{% endblock %}
-
 {% block content %}
-<div class="columns is-centered hero">
-    <div class="column is-half hero-body">
-        <h1 class="title">{{ title }}</h1>
-    </div>
     <form class="box" action="#" method="POST">
         <div class="field">
             <label class="label" for="url">Here you can enter your URL:</label>
@@ -26,14 +18,4 @@
 
         <button class="button is-primary" type="submit">Make your Mini URL!</button>
     </form>
-
-    <form class="box">
-        <div class="field">
-            <label class="label">Here is your Mini-URL:</label>
-            <div class="control">
-            <input class="input" type="text" placeholder="Short URL">
-            </div>
-        </div>
-    </form> 
-</div>
 {% endblock %}

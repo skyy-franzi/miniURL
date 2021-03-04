@@ -9,7 +9,12 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    <div class="columns is-centered hero">
+        <div class="column is-half hero-body">
+            <h1 class="title">{{ title }}</h1>
+        </div>
         {% block content%}
         {% endblock %}
+    </div>
 </body>
 </html>
