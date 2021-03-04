@@ -1,2 +1,2 @@
 # miniURL
-This is a URL Shortener created with Python
+This is an URL Shortener created with Python
